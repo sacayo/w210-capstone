@@ -1,0 +1,30 @@
+{
+  "data_collection": {
+    "rate_limit": 1.0,
+    "max_retries": 3,
+    "timeout": 30,
+    "max_jurisdictions_per_state": 3,
+    "max_codes_per_jurisdiction": 5
+  },
+  "analysis": {
+    "generate_visualizations": true,
+    "create_word_clouds": true,
+    "calculate_readability": true,
+    "max_keywords": 20
+  },
+  "output": {
+    "data_dir": "data",
+    "visualization_dir": "visualizations", 
+    "reports_dir": "reports",
+    "log_dir": "logs"
+  },
+  "logging": {
+    "level": "INFO",
+    "log_to_file": true,
+    "log_file": "logs/municipal_research.log"
+  },
+  "agents": {
+    "enable_parallel_processing": false,
+    "max_workers": 4
+  }
+}
